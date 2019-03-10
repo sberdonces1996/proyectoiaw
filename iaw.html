@@ -1,0 +1,453 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>PRACTICA FINAL IMPLANTACIÓN DE APLICACIONES WEB</title>
+
+	<meta name="generator" content="Slide Show (S9) v4.1.0 on Ruby 2.3.1 (2016-04-26) [x86_64-linux-gnu]">
+	<meta name="author"    content="Sebastián & Francisco Javier. (IES Virgen del Carmen)">
+	<meta name="viewport"  content="width=1024, user-scalable=no">
+
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="core/deck.core.css">
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="themes/style/web-2.0.css">
+	<link rel="stylesheet" id="transition-theme-link" href="themes/transition/horizontal-slide.css">
+	
+	<!-- Custom CSS just for this page -->
+	<!-- GB: changed fixed name to variable -->
+	<link rel="stylesheet"  href="iaw.css">
+	
+	<script src="lib/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<div class="theme-menu">
+	<h2>Themes</h2>
+	
+	<label for="style-themes">Style:</label>
+	<select id="style-themes">
+		<option selected value="themes/style/web-2.0.css">Web 2.0</option>
+		<option value="themes/style/swiss.css">Swiss</option>
+		<option value="themes/style/neon.css">Neon</option>
+		<option value="">None</option>
+	</select>
+	
+	<label for="transition-themes">Transition:</label>
+	<select id="transition-themes">
+		<option selected value="themes/transition/horizontal-slide.css">Horizontal Slide</option>
+		<option value="themes/transition/vertical-slide.css">Vertical Slide</option>
+		<option value="themes/transition/fade.css">Fade</option>
+		<option value="">None</option>
+	</select>
+</div>
+
+<section class="slide" id="title-slide">
+	<h1>PRACTICA FINAL IMPLANTACIÓN DE APLICACIONES WEB</h1>
+</section>
+
+<!-- note: assumes no header (breaking slides w/ SLIDE directive) -->
+ 
+  <section class="slide" id="1"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    
+<!-- _S9SLIDE_ -->
+<h2 id="practica-final-implantaciÓn-de-aplicaciones-web">PRACTICA FINAL IMPLANTACIÓN DE APLICACIONES WEB</h2>
+
+<pre><code>APLICACIÓN CREADA POR IONIC Y CORDOVA
+IMPLEMENTADA CON DOCKERS
+
+
+
+SEBASTIÁN BERDONCES AGUDO
+			Y
+FRANCISCO JAVIER BLAZQUEZ CATENA
+</code></pre>
+
+
+
+  </section>
+ 
+  <section class="slide" id="2"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="Índice">Índice</h2>
+
+<ul>
+  <li>1  Introducción</li>
+  <li>2  Componentes necesarios</li>
+  <li>3  Instalación</li>
+  <li>4  Creando nuestro primer proyecto</li>
+  <li>5  Arquitectura de la aplicación</li>
+  <li>6  Componentes</li>
+  <li>7  Construyendo la apk</li>
+  <li>8  Documentación</li>
+</ul>
+
+
+
+  </section>
+ 
+  <section class="slide" id="3"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="1-introdución">1. Introdución</h2>
+
+<pre><code>Ionic es un framework construido usando HTML5, CSS3 y Javascript para el desarrollo de aplicaciones híbridas para dispositivos móviles. La librería está orientada únicamente a su visualización en dispositivos móviles, es decir, no es una librería responsive como Bootstrap que se adapte a distintos tamaños de pantalla.
+</code></pre>
+
+
+  </section>
+ 
+  <section class="slide" id="4"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="1-introdución-1">1. Introdución</h2>
+<pre><code>Ionic incluye una completa librería de componentes, estilos y animaciones que simulan el aspecto nativo de las distintas plataformas. Estos componentes adoptarán automáticamente la apariencia nativa del dispositivo en el que si visualicen. Por ejemplo, si incluimos un checkbox en un formulario, al compilar y visualizar dicha aplicación en Android, el checkbox adoptará un aspecto distinto al que mostraría en iOS.
+</code></pre>
+
+
+  </section>
+ 
+  <section class="slide" id="5"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="2-componentes-necesarios">2. Componentes necesarios</h2>
+
+<ul>
+  <li>IONIC 3</li>
+  <li>CORDOVA</li>
+  <li>ANDROID SDK Y BUILD TOOLS</li>
+  <li>ANGULAR JS</li>
+  <li>DOCKERS</li>
+</ul>
+
+
+
+  </section>
+ 
+  <section class="slide" id="6"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="2-componentes-necesarios-1">2. Componentes necesarios</h2>
+<p>####CORDOVA
+Apache Cordova es un marco de desarrollo móvil de código abierto. Permite utilizar las tecnologías estándar web como HTML5, CSS3 y JavaScript para desarrollo multiplataforma, evitando el lenguaje de desarrollo nativo de cada plataforma móvil.
+Ionic, gracias a que viene integrado con Cordova, también permite el acceso a las características nativas de los dispositivos. Es decir, desde el código web podremos hacer uso de los sensores del dispositivo como GPS, cámara…</p>
+
+
+
+  </section>
+ 
+  <section class="slide" id="7"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="2-componentes-necesarios-2">2. Componentes necesarios</h2>
+<h4 id="android-sdk-y-build-tools">android sdk y build tools</h4>
+<p>Instalar el SDK de Android nos permite principalmente crear aplicaciones para Android. Desde las más sencillas hasta cualquiera que nuestros conocimientos de programación nos permitan. Las API de Android facilitan la tarea y la propia herramienta de Android Studio (Editor) nos deja descargar decenas apps de código abierto para que veamos cómo funciona todo.</p>
+
+<p>Cuando escribimos una aplicación podemos verla en directo gracias al Android Instant Run, un emulador rápido que aplica los cambios sin necesidad de compilar la aplicación.</p>
+
+
+
+  </section>
+ 
+  <section class="slide" id="8"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="2-componentes-necesarios-3">2. Componentes necesarios</h2>
+<h4 id="angular">Angular</h4>
+<p>Angular es un framework de desarrollo para JavaScript creado por Google. La finalidad de Angular es facilitarnos el desarrollo de aplicaciones web y además darnos herramientas para trabajar con los elementos de una web de una manera más sencilla y optima.
+Otro propósito que tiene Angular es la separación completa entre el front-end y el back-end en una aplicación web.</p>
+
+
+
+  </section>
+ 
+  <section class="slide" id="9"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="2-componentes-necesarios-4">2. Componentes necesarios</h2>
+<h4 id="dockers">Dockers</h4>
+<p>La idea detrás de Docker es crear contenedores ligeros y portables para las aplicaciones software que puedan ejecutarse en cualquier máquina con Docker instalado, independientemente del sistema operativo que la máquina tenga por debajo, facilitando así también los despliegues.</p>
+
+
+
+  </section>
+ 
+  <section class="slide" id="10"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="3-instalación">3. Instalación</h2>
+<pre><code>En primer lugar tenemos que instalar en gestor de paquetes de NodeJs (npm) para poder instalar el propio Ionic y algunas otras dependencias que nos harán falta.
+- sudo apt-get install nodejs
+- sudo apt-get install npm
+</code></pre>
+<pre><code>Instalar la última versión de Ionic y Cordova
+- sudo npm install -g cordova 
+- sudo npm install -g ionic
+</code></pre>
+<pre><code>Instalar android sdk y build tools
+</code></pre>
+
+<p>Y todo esto lo metimos en un contenedor Dockers listo para funcionar y compilar</p>
+
+<pre><code>Enlace al contenedor Dockers:
+
+docker build -t beevelop/ionic github.com/beevelop/docker-ionic 
+</code></pre>
+
+
+
+  </section>
+ 
+  <section class="slide" id="11"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="4-creando-nuestro-primer-proyecto">4. Creando nuestro primer proyecto</h2>
+
+<p>Ionic facilita la creación de proyectos, mediante el cual podremos generar proyectos en blanco  y de muchos otros tipos para empezar a programar su contenido desde cero.</p>
+
+<p>Las opciones de comandos que tenemos son:</p>
+
+<ul>
+  <li>
+    <p>ionic start myApp blank</p>
+  </li>
+  <li>
+    <p>ionic start myApp tabs</p>
+  </li>
+  <li>
+    <p>ionic start myApp sidemenu</p>
+  </li>
+  <li>
+    <p>En la version 4 de Ionic</p>
+  </li>
+</ul>
+
+<p><img src="./imagen.png" alt="Alt" /></p>
+
+
+
+  </section>
+ 
+  <section class="slide" id="12"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="4-creando-nuestro-primer-proyecto-1">4. Creando nuestro primer proyecto</h2>
+
+<p>Ahora añadiremos la plataforma en la que queramos compilar nuestra aplicacion, en este caso android. 
+Entre ellas están Android, iOS, Amazon Fire OS, Blackberry 10, navegador, Firefox OS, Ubuntu, WebOS, Windows Phone 8 y Windows.</p>
+
+<p>El comando seria :</p>
+<pre><code>ionic platform add nombre-de-la-plataforma
+</code></pre>
+<p>Para ver las demas plataformas que haya instaladas seria:</p>
+<pre><code>ionic platform
+</code></pre>
+
+<p>Y para iniciar un proyecto creado pondremos:</p>
+<pre><code>ionic serve
+</code></pre>
+<p>Y nos iniciaria una pagina en el navegador con la simulacion y se nos abriria el Android Studio, un editor de codigo, para empezar a crear nuestra apk</p>
+
+
+
+  </section>
+ 
+  <section class="slide" id="13"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="5-arquitectura-de-la-aplicación">5. Arquitectura de la aplicación</h2>
+<p>Al generar un nuevo proyecto de Ionic se nos creará una estructura predefinida de carpetas y ficheros que nos permitirán organizar el código de nuestro proyecto.</p>
+
+<ul>
+  <li>
+    <p>hooks/ - Esta carpeta se utiliza para añadir scripts que se ejecutarán cuando se produzcan determinados eventos, como por ejemplo antes o después, de la compilación, etc. En la propia carpeta se incluye un fichero con instrucciones para su utilización.</p>
+  </li>
+  <li>
+    <p>platforms/ - Contiene el código específico de las plataformas móviles para las cuales se va a compilar, como por ejemplo Android, iOS, etc. El código de esta carpeta es generado y no se ha de modificar manualmente.</p>
+  </li>
+  <li>
+    <p>plugins/ - Contiene los plugins o módulos instalados para nuestra aplicación, los cuales se utilizan para añadir funcionalidad como el acceso a las características nativas del móvil.
+    resources/ - Recursos específicos de las plataformas. En esta carpeta podremos colocar aquellos assets que sean únicos o dependientes de una plataforma en concreto.</p>
+  </li>
+  <li>
+    <p>scss/ - Código SCSS que será compilado a la carpeta www/css/</p>
+  </li>
+  <li>
+    <p>www/  - Contiene el código fuente principal de nuestra aplicación web: HTML, CSS, JavaScript, imágenes, etc. Esta carpeta es donde tendremos que desarrollar la aplicación web de forma centralizada y después utilizarla para la compilación para las distintas plataformas.</p>
+  </li>
+  <li>
+    <p>bower.json - Listado de dependencias y paquetes de Bower.</p>
+  </li>
+  <li>
+    <p>config.xml - Contiene la configuración de Cordova con las opciones especificas para cada plataformas de compilación.</p>
+  </li>
+  <li>
+    <p>ionic.config.json - Configuración del proyecto de Ionic.</p>
+  </li>
+  <li>
+    <p>package.json - Dependencias y paquetes de NodeJS.</p>
+  </li>
+</ul>
+
+
+
+  </section>
+ 
+  <section class="slide" id="14"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="5-arquitectura-de-la-aplicación-1">5. Arquitectura de la aplicación</h2>
+
+<pre><code>En la carpeta www tendremos los siguientes ficheros:
+</code></pre>
+<ul>
+  <li>
+    <p>css/ - Aquí colocaremos todas las hojas de estilo que se usen en la aplicación.</p>
+  </li>
+  <li>
+    <p>img/ - En esta carpeta almacenaremos las imágenes de nuestro proyecto.</p>
+  </li>
+  <li>
+    <p>js/ - Contendrá todo el código JavaScript de la aplicación.</p>
+  </li>
+  <li>
+    <p>lib/ - Aquí guardaremos todas las librerías que se usen en nuestro código. Por defecto ya viene incluido todo el código de la librería Ionic (Javascipts, CSS, etc.) para que lo podamos cargar desde nuestro proyecto.</p>
+  </li>
+  <li>
+    <p>templates/ - Esta carpeta viene preparada para almacenar las plantillas o vistas de la aplicación (en algunas versiones no se crea por defecto).</p>
+  </li>
+  <li>
+    <p>index.html - Este es el fichero principal que se abrirá al cargar la aplicación. Aquí tendremos que cargar todo lo necesario y mostrar el contenido de la primera pantalla.</p>
+  </li>
+</ul>
+
+
+
+  </section>
+ 
+  <section class="slide" id="15"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="6-componentes">6. Componentes</h2>
+
+<p>Los principales componentes que podemos utilizar con ionic para nuestro proyecto son:</p>
+
+<ul>
+  <li>Área de contenidos</li>
+  <li>Cabeceras</li>
+  <li>Pie de página</li>
+  <li>Botones y enlaces</li>
+  <li>Listados</li>
+  <li>Tarjetas</li>
+  <li>Formularios</li>
+  <li>Tabs o fichas</li>
+  <li>Grid o rejillas</li>
+</ul>
+
+
+
+  </section>
+ 
+  <section class="slide" id="16"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="7-construyendo-la-apk">7. Construyendo la apk</h2>
+
+<p>Una vez que ya tenemos todo configurado y puesto en su sitio debemos empezar la compilacion.</p>
+
+<p>Se necesitarian los siguientes comandos:</p>
+
+<pre><code>- ionic cordova build -lab: Nos da una vista previa de como quedara la aplicación
+
+- ionic cordova build -prod [Plataforma]:  Optimiza el codigo para mayor rapidez
+
+- ionic cordova build -release [Plataforma]: Hace que la aplicacion pueda ser lanzada a las tiendas 
+</code></pre>
+
+
+
+  </section>
+ 
+  <section class="slide" id="17"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="8-documentación">8. Documentación</h2>
+
+<pre><code>   - Primeros pasos: http://ionicframework.com/getting-started/
+   - Documentación: http://ionicframework.com/docs/
+   - Componentes: http://ionicframework.com/docs/components/
+   - API de Ionic: http://ionicframework.com/docs/api/
+   - Más documentación como vídeos, trucos, foro, etc. en: http://learn.ionicframework.com/
+
+</code></pre>
+
+
+
+  </section>
+ 
+  <section class="slide" id="18"> <!--fix: add with filter? +1 toindex -title slide is 1 already -->
+    <!-- _S9SLIDE_ -->
+<h2 id="8-codigo-qr">8. Codigo QR</h2>
+
+<pre><code>   - Subimos la aplicacion a https://www.mega.nz
+   - Utilizamos la pagina: http://www.codigos-qr.com/generador-de-codigos-qr/
+   - Que traduce cualquier URL en una imagen QR que facilita y agiliza el acceso a la aplicación
+
+</code></pre>
+
+
+  </section>
+
+
+
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="number" name="slidenum" id="goto-slide">
+	<input type="submit" value="Go">
+</form>
+
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="lib/jquery-1.6.4.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+
+<!-- Specific to this page -->
+<!-- GB: adding introduction.js inline -->
+<script>
+$(function() {
+	// Deck initialization
+	$.deck('.slide');
+	
+	$('#style-themes').change(function() {
+		$('#style-theme-link').attr('href', $(this).val());
+	});
+	
+	$('#transition-themes').change(function() {
+		$('#transition-theme-link').attr('href', $(this).val());
+	});
+});
+
+
+</script>
+
+</body>
+</html>
